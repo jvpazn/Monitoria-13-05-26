@@ -72,5 +72,40 @@ CalcularCargaHoraria(OdeioTrabalhar)
 
 
 
+'''Em um Hospital os procedimentos médicos são armazenados com 
+código, nome e tempo médio de duração. 
+Crie um banco que irá conter os procedimentos da tabela a seguir. 
+(Este banco pode ser modificado) (1,5)
+Código	Disciplina	Carga-horária mensal
+CON0015	Consulta Básica	30 minutos
+EXA0020	Exame Cardiológico	15 minutos
+EXA0022	Ressonância Magnética	40 minutos
+CIR0023	Cirurgia Pediátrica	3 horas'''
 
+Hospital = {
+    "CON0015": {
+        "Codigo": "CON0015",
+        "Disciplina": "Consulta Básica",
+        "CargaMensal": 30
+    },
 
+    "EXA0020": {
+        "Codigo": "EXA0020",
+        "Disciplina": "Exame Cardiológico",
+        "CargaMensal": 15
+    },
+
+    "EXA0022": {
+        "Codigo": "EXA0022",
+        "Disciplina": "Ressonância Magnética",
+        "CargaMensal": 40
+    },
+
+    "CIR0023": {
+        "Codigo": "CIR0023",
+        "Disciplina": "Cirurgia Pediátrica",
+        "CargaMensal": 180
+    }
+}
+
+print(Hospital["EXA0020"]["CargaMensal"])
